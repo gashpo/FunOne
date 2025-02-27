@@ -1,0 +1,39 @@
+@import "reset";
+@import "variable/variable";
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Varela&display=swap");
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: px(5);
+  background-color: color(gray-0);
+  @include rounded(100);
+}
+
+::-webkit-scrollbar-thumb {
+  width: px(5);
+  background-color: color(gray-150);
+  @include rounded(100);
+}
+
+body {
+  color: color(gray-1000);
+
+  &:has(.overlay) {
+    overflow: hidden;
+  }
+}
+
+@import "components/button";
+@import "components/badge";
+@import "components/datepicker";
+@import "components/divider";
+@import "components/input";
+@import "components/overlay";
+@import "components/popup";
+@import "components/select";
+@import "components/tab";
+
+@import "pages/login";

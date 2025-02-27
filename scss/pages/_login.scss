@@ -1,0 +1,120 @@
+.login-page {
+  height: 100dvh;
+  background: linear-gradient(
+    to bottom,
+    color(primary-800),
+    color(primary-900)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-container {
+    width: px(1000);
+    background-color: color(gray-0);
+    @include rounded(40);
+    padding: spacing(4);
+    display: flex;
+
+    .imagery {
+      @include rounded(40);
+      background-color: color(primary-800);
+      padding: spacing(36) spacing(0);
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .marquee {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        grid-column-gap: 1rem;
+
+        .marquee-content {
+          display: flex;
+          min-width: 100%;
+          justify-content: space-around;
+          flex: 0 0 auto;
+          grid-column-gap: 1rem;
+          min-width: fit-content;
+          margin-right: 28px;
+
+          &.scroll {
+            animation: scroll 30s linear infinite;
+          }
+
+          img {
+            height: px(26);
+          }
+        }
+
+        @keyframes scroll {
+          from {
+            transform: translateX(0);
+          }
+
+          to {
+            transform: translateX(calc(-100% - 2.75rem));
+          }
+        }
+      }
+    }
+
+    .login-methods {
+      width: px(540);
+      padding: spacing(72) spacing(36) spacing(28);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: spacing(120);
+
+      .login-content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: spacing(64);
+
+        .login-title {
+          img {
+            width: px(40);
+            margin-bottom: spacing(24);
+          }
+
+          p {
+            color: color(gray-600);
+            margin-top: spacing(4);
+            font-weight: fontweight(Medium);
+          }
+        }
+
+        .login-action {
+          button {
+            width: 100%;
+          }
+
+          .login-desc {
+            background-color: color(gray-50);
+            @include rounded(12);
+            @include fontRWD(body4);
+            color: color(gray-600);
+            padding: spacing(16) spacing(16);
+            margin-top: spacing(20);
+          }
+        }
+      }
+
+      .login-terms {
+        text-align: center;
+        @include fontRWD(body4);
+        color: color(gray-600);
+
+        a {
+          span {
+            @include fontRWD(body4);
+          }
+        }
+      }
+    }
+  }
+}
