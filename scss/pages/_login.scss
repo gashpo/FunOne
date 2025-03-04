@@ -1,5 +1,5 @@
 .login-page {
-  height: 100dvh;
+  min-height: 100dvh;
   background: linear-gradient(
     to bottom,
     color(primary-800),
@@ -24,41 +24,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-
-      .marquee {
-        display: flex;
-        overflow: hidden;
-        width: 100%;
-        grid-column-gap: 1rem;
-
-        .marquee-content {
-          display: flex;
-          min-width: 100%;
-          justify-content: space-around;
-          flex: 0 0 auto;
-          grid-column-gap: 1rem;
-          min-width: fit-content;
-          margin-right: 28px;
-
-          &.scroll {
-            animation: scroll 30s linear infinite;
-          }
-
-          img {
-            height: px(26);
-          }
-        }
-
-        @keyframes scroll {
-          from {
-            transform: translateX(0);
-          }
-
-          to {
-            transform: translateX(calc(-100% - 2.75rem));
-          }
-        }
-      }
+      align-items: flex-end;
     }
 
     .login-methods {
@@ -84,22 +50,26 @@
           p {
             color: color(gray-600);
             margin-top: spacing(4);
-            font-weight: fontweight(Medium);
+            @include fontRWD(body3, fontweight(Medium));
           }
         }
 
         .login-action {
-          button {
-            width: 100%;
-          }
-
           .login-desc {
             background-color: color(gray-50);
             @include rounded(12);
             @include fontRWD(body4);
             color: color(gray-600);
             padding: spacing(16) spacing(16);
-            margin-top: spacing(20);
+            margin-bottom: spacing(20);
+
+            b {
+              @include fontRWD(body4, fontweight(Bold));
+            }
+          }
+
+          button {
+            width: 100%;
           }
         }
       }
@@ -115,6 +85,57 @@
           }
         }
       }
+    }
+  }
+
+  > .marquee {
+    display: none;
+  }
+
+  @include max-to(desktop) {
+    .login-container {
+      width: calc(100dvw - px(32));
+      min-width: px(720);
+
+      .login-methods {
+        width: calc((100dvw - px(32)) * 0.6);
+      }
+    }
+  }
+
+  @include max-to(mobile) {
+    position: relative;
+    flex-wrap: wrap;
+    gap: spacing(44);
+
+    .login-container {
+      width: 100dvw;
+      min-width: auto;
+      flex-direction: column;
+      background-color: transparent;
+      padding: spacing(16);
+
+      .imagery {
+        .marquee {
+          display: none;
+        }
+      }
+
+      .login-methods {
+        background-color: color(gray-0);
+        width: 100%;
+        @include rounded(40);
+        padding: spacing(40) spacing(28) spacing(28);
+        gap: spacing(40);
+
+        .login-content {
+          gap: spacing(40);
+        }
+      }
+    }
+
+    > .marquee {
+      display: flex;
     }
   }
 }

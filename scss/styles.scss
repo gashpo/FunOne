@@ -8,7 +8,7 @@
 
 ::-webkit-scrollbar {
   width: px(5);
-  background-color: color(gray-0);
+  background-color: transparent;
   @include rounded(100);
 }
 
@@ -19,7 +19,8 @@
 }
 
 body {
-  color: color(gray-1000);
+  background-color: color(gray-0);
+  color: color(gray-900);
 
   &:has(.overlay) {
     overflow: hidden;
@@ -27,13 +28,21 @@ body {
 }
 
 @import "components/button";
-@import "components/badge";
 @import "components/datepicker";
 @import "components/divider";
 @import "components/input";
+@import "components/list";
+@import "components/marquee";
 @import "components/overlay";
 @import "components/popup";
 @import "components/select";
 @import "components/tab";
+@import "components/tag";
+@import "components/textlink";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/layout";
 
 @import "pages/login";
+@import "pages/other-pages";

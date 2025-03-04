@@ -1,0 +1,19 @@
+.tag {
+  padding: spacing(8) spacing(20);
+  @include rounded(100);
+  background-color: color(primary-100);
+  color: color(primary-800);
+  @include fontRWD(body4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: spacing(8);
+
+  i {
+    font-size: fontsize(16) !important;
+
+    &.close {
+      color: color(primary-300);
+    }
+  }
+}

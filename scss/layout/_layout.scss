@@ -1,0 +1,26 @@
+.container {
+  width: px(980);
+  max-width: calc(100dvw - px(40));
+  margin-right: auto;
+  margin-left: auto;
+
+  @include max-to(tablet) {
+  }
+}
+
+main {
+  margin-top: spacing(160);
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: spacing(72);
+
+  .tag {
+    margin-bottom: spacing(40);
+  }
+
+  h2 {
+    margin-bottom: spacing(20);
+  }
+}

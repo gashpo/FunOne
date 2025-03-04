@@ -1,0 +1,27 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: spacing(24) spacing(40);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: spacing(20);
+  background-color: color(gray-0);
+  pointer-events: none;
+  @include transition(top);
+
+  > * {
+    pointer-events: all;
+  }
+
+  .logo {
+    height: px(40);
+  }
+
+  @include max-to(mobile) {
+    padding: spacing(24) spacing(20);
+  }
+}

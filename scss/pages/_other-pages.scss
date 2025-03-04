@@ -1,0 +1,34 @@
+.privacy-content {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(20);
+}
+
+.error404 {
+  padding: spacing(100);
+  background-image: url("../images/404.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  gap: spacing(40);
+
+  .desc {
+    flex-grow: 1;
+    color: color(gray-700);
+    @include fontRWD(body3);
+
+    h1 {
+      margin-bottom: spacing(28);
+      color: color(gray-900);
+    }
+  }
+
+  @include max-to(mobile) {
+    flex-direction: column;
+    gap: spacing(64);
+    padding: spacing(36);
+    background-position: bottom 30% center;
+  }
+}

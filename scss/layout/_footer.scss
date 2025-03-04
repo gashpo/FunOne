@@ -1,0 +1,11 @@
+footer {
+  padding: spacing(40);
+  text-align: center;
+  margin-top: spacing(72);
+  color: color(gray-500);
+  @include fontRWD(body4);
+
+  @include max-to(mobile) {
+    padding: spacing(40) spacing(20);
+  }
+}

@@ -1,0 +1,38 @@
+a,
+.link {
+  text-decoration: none;
+
+  * {
+    color: color(primary-900);
+    @include transition(color);
+  }
+
+  i {
+    font-size: fontsize(22) !important;
+    transform: translate(0, spacing(4));
+    margin-right: spacing(4);
+  }
+
+  span {
+    text-decoration: underline;
+  }
+
+  @include hover {
+    * {
+      text-decoration: none;
+      color: color(gray-600);
+    }
+  }
+
+  /* Small */
+  &.link-s {
+    * {
+      @include fontRWD(caption);
+    }
+
+    i {
+      font-size: fontsize(16) !important;
+      transform: translate(0, spacing(3));
+    }
+  }
+}
