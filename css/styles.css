@@ -728,7 +728,7 @@ h1,
   font-weight: 700;
   line-height: 120%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   h1,
   .h1 {
     font-size: 2rem;
@@ -743,7 +743,7 @@ h2,
   font-weight: 700;
   line-height: 120%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   h2,
   .h2 {
     font-size: 1.75rem;
@@ -758,7 +758,7 @@ h3,
   font-weight: 700;
   line-height: 120%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   h3,
   .h3 {
     font-size: 1.5rem;
@@ -773,7 +773,7 @@ h4,
   font-weight: 700;
   line-height: 120%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   h4,
   .h4 {
     font-size: 1.25rem;
@@ -788,7 +788,7 @@ h5,
   font-weight: 700;
   line-height: 120%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   h5,
   .h5 {
     font-size: 1.125rem;
@@ -803,7 +803,7 @@ h6,
   font-weight: 700;
   line-height: 120%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   h6,
   .h6 {
     font-size: 1rem;
@@ -817,7 +817,7 @@ h6,
   font-weight: 400;
   line-height: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .body1 {
     font-size: 1.25rem;
     font-weight: 400;
@@ -830,7 +830,7 @@ h6,
   font-weight: 400;
   line-height: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .body2 {
     font-size: 1.125rem;
     font-weight: 400;
@@ -845,7 +845,7 @@ span,
   font-weight: 400;
   line-height: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   p,
   span,
   .body3 {
@@ -860,7 +860,7 @@ span,
   font-weight: 400;
   line-height: 120%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .caption {
     font-size: 0.75rem;
     font-weight: 400;
@@ -916,7 +916,7 @@ input[type=submit] {
   /* Secondary */
   /* Tertiary */
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   button,
   .btn,
   input[type=submit] {
@@ -949,7 +949,7 @@ input[type=submit].btn-l {
   font-weight: 400;
   line-height: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   button.btn-l,
   .btn.btn-l,
   input[type=submit].btn-l {
@@ -978,7 +978,7 @@ input[type=submit].btn-xl {
   font-weight: 400;
   line-height: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   button.btn-xl,
   .btn.btn-xl,
   input[type=submit].btn-xl {
@@ -1199,7 +1199,7 @@ input {
   border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
   border: 0.0625rem solid #d7d7d7;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   input {
     font-size: 1rem;
     font-weight: 400;
@@ -1230,7 +1230,7 @@ input[type=text] {
   line-height: 150%;
   line-height: 3rem;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .input-wrapper label {
     font-size: 0.875rem;
     font-weight: 400;
@@ -1266,7 +1266,7 @@ input[type=text] {
   line-height: 120%;
   color: #c13515;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .input-wrapper .input-content .error-message {
     font-size: 0.75rem;
     font-weight: 400;
@@ -1279,7 +1279,7 @@ input[type=text] {
   line-height: 120%;
   color: #959595;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .input-wrapper .input-content .helper {
     font-size: 0.75rem;
     font-weight: 400;
@@ -1314,7 +1314,7 @@ input[type=text] {
   color: #c13515;
   text-align: left;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .otp-wrapper .error-message {
     font-size: 0.875rem;
     font-weight: 400;
@@ -1331,7 +1331,7 @@ input[type=text] {
   line-height: 150%;
   -moz-appearance: textfield;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .otp-wrapper input {
     font-size: 1.125rem;
     font-weight: 400;
@@ -1361,7 +1361,7 @@ input[type=text] {
   min-width: 9.375rem;
   cursor: pointer;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .checkbox-wrapper label,
   .radio-wrapper label {
     font-size: 1rem;
@@ -1475,7 +1475,7 @@ ol > li::before {
   width: 1.25rem;
   text-align: right;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   ol > li::before {
     font-size: 1.125rem;
     font-weight: 700;
@@ -1498,7 +1498,7 @@ ol > li > ol > li::before {
   font-weight: 700;
   line-height: 120%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   ol > li > ol > li::before {
     font-size: 1rem;
     font-weight: 700;
@@ -1759,7 +1759,7 @@ ul.disc {
   line-height: 150%;
   border-radius: 6.25rem 6.25rem 6.25rem 6.25rem;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .select-wrapper .select-dropdown {
     font-size: 1rem;
     font-weight: 400;
@@ -1777,7 +1777,7 @@ ul.disc {
   line-height: 150%;
   padding: 0.5rem 1rem;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .select-wrapper .select-dropdown.small {
     font-size: 0.875rem;
     font-weight: 400;
@@ -1934,7 +1934,7 @@ ul.disc {
   transition: color 0.3s ease-in-out;
   text-align: center;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .tab-wrapper .tab .tab-item {
     font-size: 1rem;
     font-weight: 400;
@@ -2003,7 +2003,7 @@ ul.disc {
   justify-content: center;
   gap: 0.5rem;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .tag {
     font-size: 0.875rem;
     font-weight: 400;
@@ -2050,7 +2050,7 @@ a.link-s *,
   font-weight: 400;
   line-height: 120%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   a.link-s *,
   .link.link-s * {
     font-size: 0.75rem;
@@ -2089,6 +2089,9 @@ header .logo {
   header {
     padding: 1.5rem 1.25rem;
   }
+  header .logo {
+    height: 2.25rem;
+  }
 }
 
 footer {
@@ -2100,7 +2103,7 @@ footer {
   font-weight: 400;
   line-height: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   footer {
     font-size: 0.875rem;
     font-weight: 400;
@@ -2171,6 +2174,7 @@ main {
   flex-direction: column;
   align-items: stretch;
   gap: 4rem;
+  min-height: 22.5rem;
 }
 .login-page .login-container .login-methods .login-content .login-title img {
   width: 2.5rem;
@@ -2183,7 +2187,7 @@ main {
   font-weight: 500;
   line-height: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .login-page .login-container .login-methods .login-content .login-title p {
     font-size: 1rem;
     font-weight: 500;
@@ -2200,7 +2204,7 @@ main {
   padding: 1rem 1rem;
   margin-bottom: 1.25rem;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .login-page .login-container .login-methods .login-content .login-action .login-desc {
     font-size: 0.875rem;
     font-weight: 400;
@@ -2211,8 +2215,9 @@ main {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 150%;
+  color: #313131;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .login-page .login-container .login-methods .login-content .login-action .login-desc b {
     font-size: 0.875rem;
     font-weight: 700;
@@ -2229,7 +2234,7 @@ main {
   line-height: 150%;
   color: #626262;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .login-page .login-container .login-methods .login-terms {
     font-size: 0.875rem;
     font-weight: 400;
@@ -2241,7 +2246,7 @@ main {
   font-weight: 400;
   line-height: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .login-page .login-container .login-methods .login-terms a span {
     font-size: 0.875rem;
     font-weight: 400;
@@ -2273,6 +2278,9 @@ main {
     background-color: transparent;
     padding: 1rem;
   }
+  .login-page .login-container .imagery .logo {
+    height: 2.75rem;
+  }
   .login-page .login-container .imagery .marquee {
     display: none;
   }
@@ -2285,7 +2293,23 @@ main {
   }
   .login-page .login-container .login-methods .login-content {
     gap: 2.5rem;
+    justify-content: space-between;
+    min-height: 21.875rem;
   }
+  .login-page .login-container .login-methods .login-content .login-title h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .login-page .login-container .login-methods .login-content .login-title h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+@media (max-width: 767px) {
   .login-page > .marquee {
     display: flex;
   }
@@ -2315,7 +2339,7 @@ main {
   font-weight: 400;
   line-height: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .error-content .desc {
     font-size: 1rem;
     font-weight: 400;

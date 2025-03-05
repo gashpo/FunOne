@@ -23,5 +23,9 @@ header {
 
   @include max-to(mobile) {
     padding: spacing(24) spacing(20);
+
+    .logo {
+      height: px(36);
+    }
   }
 }

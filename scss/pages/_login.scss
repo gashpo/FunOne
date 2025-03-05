@@ -40,6 +40,7 @@
         flex-direction: column;
         align-items: stretch;
         gap: spacing(64);
+        min-height: px(360);
 
         .login-title {
           img {
@@ -65,6 +66,7 @@
 
             b {
               @include fontRWD(body4, fontweight(Bold));
+              color: color(gray-800);
             }
           }
 
@@ -116,6 +118,9 @@
       padding: spacing(16);
 
       .imagery {
+        .logo {
+          height: px(44);
+        }
         .marquee {
           display: none;
         }
@@ -130,6 +135,14 @@
 
         .login-content {
           gap: spacing(40);
+          justify-content: space-between;
+          min-height: px(350);
+
+          .login-title {
+            h3 {
+              @include fontRWD(h1);
+            }
+          }
         }
       }
     }

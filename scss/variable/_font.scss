@@ -73,7 +73,7 @@ $font-family: (
       line-height: 120%,
     ),
   ),
-  tablet: (
+  mobile: (
     h1: (
       font-size: fontsize(32),
       font-weight: fontweight(Bold),
@@ -157,8 +157,8 @@ $font-family: (
   line-height: fontfamily($element, desktop, line-height);
 
   // 加入其他斷點的樣式
-  @include max-to(tablet) {
-    font-size: fontfamily($element, tablet);
+  @include max-to(mobile) {
+    font-size: fontfamily($element, mobile);
     font-weight: $weight;
     line-height: fontfamily($element, desktop, line-height);
   }
