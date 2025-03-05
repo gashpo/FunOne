@@ -731,7 +731,7 @@ h1,
 @media (max-width: 991px) {
   h1,
   .h1 {
-    font-size: 2.375rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 120%;
   }
@@ -746,7 +746,7 @@ h2,
 @media (max-width: 991px) {
   h2,
   .h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     line-height: 120%;
   }
@@ -2297,7 +2297,8 @@ main {
   gap: 1.25rem;
 }
 
-.error404 {
+.error-content {
+  margin-top: -6.25rem;
   padding: 6.25rem;
   background-image: url("../images/404.svg");
   background-position: center;
@@ -2307,7 +2308,7 @@ main {
   align-items: center;
   gap: 2.5rem;
 }
-.error404 .desc {
+.error-content .desc {
   flex-grow: 1;
   color: #4c4c4c;
   font-size: 1rem;
@@ -2315,21 +2316,26 @@ main {
   line-height: 150%;
 }
 @media (max-width: 991px) {
-  .error404 .desc {
+  .error-content .desc {
     font-size: 1rem;
     font-weight: 400;
     line-height: 150%;
   }
 }
-.error404 .desc h1 {
+.error-content .desc h1 {
   margin-bottom: 1.75rem;
   color: #191919;
 }
 @media (max-width: 767px) {
-  .error404 {
+  .error-content {
     flex-direction: column;
-    gap: 4rem;
     padding: 2.25rem;
     background-position: bottom 30% center;
+  }
+  .error-content #error-404 {
+    margin-top: -8.75rem;
+  }
+  .error-content #error-404 svg {
+    max-height: 45dvh;
   }
 }

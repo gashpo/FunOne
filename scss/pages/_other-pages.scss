@@ -4,7 +4,8 @@
   gap: spacing(20);
 }
 
-.error404 {
+.error-content {
+  margin-top: spacing(-100);
   padding: spacing(100);
   background-image: url("../images/404.svg");
   background-position: center;
@@ -27,8 +28,15 @@
 
   @include max-to(mobile) {
     flex-direction: column;
-    gap: spacing(64);
     padding: spacing(36);
     background-position: bottom 30% center;
+
+    #error-404 {
+      margin-top: spacing(-140);
+
+      svg {
+        max-height: 45dvh;
+      }
+    }
   }
 }
