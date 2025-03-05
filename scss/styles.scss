@@ -6,6 +6,15 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+/* 反白選取樣式 */
+::-moz-selection {
+  background-color: rgba(color(primary-200), 0.8);
+}
+
+::selection {
+  background-color: rgba(color(primary-200), 0.8);
+}
+
 ::-webkit-scrollbar {
   width: px(5);
   background-color: transparent;
@@ -30,7 +39,6 @@ body {
 @import "components/button";
 @import "components/datepicker";
 @import "components/divider";
-@import "components/header-dropdown";
 @import "components/input";
 @import "components/list";
 @import "components/marquee";

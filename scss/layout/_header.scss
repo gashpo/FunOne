@@ -29,3 +29,116 @@ header {
     }
   }
 }
+
+.header-dropdown {
+  position: relative;
+
+  .dropdown-handle,
+  .dropdown-items {
+    user-select: none;
+  }
+
+  .dropdown-handle {
+    border: px(1) solid color(gray-150);
+    padding: spacing(12) spacing(16);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: spacing(8);
+    @include fontRWD(body3);
+    @include rounded(100);
+    color: color(primary-900);
+    background-color: color(gray-0);
+
+    i {
+      position: inherit;
+      top: auto;
+      right: auto;
+    }
+
+    &.small {
+      @include fontRWD(body4);
+      padding: spacing(8) spacing(16);
+
+      i {
+        font-size: fontsize(18) !important;
+      }
+    }
+
+    &::after {
+      font-family: "Material ICons";
+      content: "\e313";
+      font-size: fontsize(16);
+      @include transition(all);
+    }
+  }
+
+  .dropdown-items {
+    position: absolute;
+    @include rounded(24);
+    color: color(gray-0);
+    background-color: color(gray-900);
+    top: calc(100% + px(4));
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: spacing(0) spacing(4) spacing(0) spacing(0);
+    overflow: hidden;
+    @include transition(all);
+
+    i {
+      display: none;
+    }
+
+    ul {
+      max-height: px(0);
+      overflow: hidden;
+      @include transition(max-height);
+
+      li {
+        padding: spacing(8) spacing(16);
+        @include transition(color, 0.2s);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: spacing(8);
+
+        i {
+          position: inherit;
+          @include transition(color);
+        }
+
+        @include hover {
+          color: color(gray-300);
+
+          i {
+            color: color(gray-300);
+          }
+        }
+      }
+    }
+  }
+
+  &.open {
+    .dropdown-handle::after {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-items {
+      min-width: max-content;
+      padding: spacing(16) spacing(4) spacing(16) spacing(0);
+
+      ul {
+        max-height: fit-content;
+      }
+    }
+  }
+
+  @include max-to(mobile) {
+    .dropdown-handle {
+      padding: spacing(8) spacing(16);
+    }
+  }
+}

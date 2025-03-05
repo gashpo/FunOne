@@ -6,7 +6,7 @@
 
 .error-content {
   margin-top: spacing(-100);
-  padding: spacing(100);
+  max-width: px(700);
   background-image: url("../images/404.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -28,12 +28,13 @@
 
   @include max-to(mobile) {
     flex-direction: column;
-    padding: spacing(36);
     background-position: bottom 30% center;
 
-    #error-404 {
-      margin-top: spacing(-140);
+    .desc {
+      max-width: px(280);
+    }
 
+    #error-404 {
       svg {
         max-height: 45dvh;
       }
