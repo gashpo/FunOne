@@ -729,6 +729,14 @@ h1,
   font-weight: 700;
   line-height: 120%;
 }
+@media (max-width: 991px) {
+  h1,
+  .h1 {
+    font-size: 2.375rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
 @media (max-width: 767px) {
   h1,
   .h1 {
@@ -743,6 +751,14 @@ h2,
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 120%;
+}
+@media (max-width: 991px) {
+  h2,
+  .h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
 }
 @media (max-width: 767px) {
   h2,
@@ -759,6 +775,14 @@ h3,
   font-weight: 700;
   line-height: 120%;
 }
+@media (max-width: 991px) {
+  h3,
+  .h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
 @media (max-width: 767px) {
   h3,
   .h3 {
@@ -773,6 +797,14 @@ h4,
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 120%;
+}
+@media (max-width: 991px) {
+  h4,
+  .h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
 }
 @media (max-width: 767px) {
   h4,
@@ -789,6 +821,14 @@ h5,
   font-weight: 700;
   line-height: 120%;
 }
+@media (max-width: 991px) {
+  h5,
+  .h5 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
 @media (max-width: 767px) {
   h5,
   .h5 {
@@ -804,6 +844,14 @@ h6,
   font-weight: 700;
   line-height: 120%;
 }
+@media (max-width: 991px) {
+  h6,
+  .h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
 @media (max-width: 767px) {
   h6,
   .h6 {
@@ -818,6 +866,13 @@ h6,
   font-weight: 400;
   line-height: 150%;
 }
+@media (max-width: 991px) {
+  .body1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   .body1 {
     font-size: 1.25rem;
@@ -830,6 +885,13 @@ h6,
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
+}
+@media (max-width: 991px) {
+  .body2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   .body2 {
@@ -846,6 +908,15 @@ span,
   font-weight: 400;
   line-height: 150%;
 }
+@media (max-width: 991px) {
+  p,
+  span,
+  .body3 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   p,
   span,
@@ -860,6 +931,13 @@ span,
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 120%;
+}
+@media (max-width: 991px) {
+  .caption {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
 }
 @media (max-width: 767px) {
   .caption {
@@ -926,6 +1004,15 @@ input[type=submit] {
   /* Secondary */
   /* Tertiary */
 }
+@media (max-width: 991px) {
+  button,
+  .btn,
+  input[type=submit] {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   button,
   .btn,
@@ -959,6 +1046,15 @@ input[type=submit].btn-l {
   font-weight: 400;
   line-height: 150%;
 }
+@media (max-width: 991px) {
+  button.btn-l,
+  .btn.btn-l,
+  input[type=submit].btn-l {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   button.btn-l,
   .btn.btn-l,
@@ -987,6 +1083,15 @@ input[type=submit].btn-xl {
   font-size: 1rem;
   font-weight: 400;
   line-height: 150%;
+}
+@media (max-width: 991px) {
+  button.btn-xl,
+  .btn.btn-xl,
+  input[type=submit].btn-xl {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   button.btn-xl,
@@ -1209,6 +1314,13 @@ input {
   border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
   border: 0.0625rem solid #d7d7d7;
 }
+@media (max-width: 991px) {
+  input {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   input {
     font-size: 1rem;
@@ -1239,6 +1351,13 @@ input[type=text] {
   font-weight: 400;
   line-height: 150%;
   line-height: 3rem;
+}
+@media (max-width: 991px) {
+  .input-wrapper label {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   .input-wrapper label {
@@ -1276,6 +1395,13 @@ input[type=text] {
   line-height: 120%;
   color: #c13515;
 }
+@media (max-width: 991px) {
+  .input-wrapper .input-content .error-message {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
 @media (max-width: 767px) {
   .input-wrapper .input-content .error-message {
     font-size: 0.75rem;
@@ -1288,6 +1414,13 @@ input[type=text] {
   font-weight: 400;
   line-height: 120%;
   color: #959595;
+}
+@media (max-width: 991px) {
+  .input-wrapper .input-content .helper {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
 }
 @media (max-width: 767px) {
   .input-wrapper .input-content .helper {
@@ -1324,6 +1457,13 @@ input[type=text] {
   color: #c13515;
   text-align: left;
 }
+@media (max-width: 991px) {
+  .otp-wrapper .error-message {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   .otp-wrapper .error-message {
     font-size: 0.875rem;
@@ -1340,6 +1480,13 @@ input[type=text] {
   font-weight: 400;
   line-height: 150%;
   -moz-appearance: textfield;
+}
+@media (max-width: 991px) {
+  .otp-wrapper input {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   .otp-wrapper input {
@@ -1370,6 +1517,14 @@ input[type=text] {
   line-height: 150%;
   min-width: 9.375rem;
   cursor: pointer;
+}
+@media (max-width: 991px) {
+  .checkbox-wrapper label,
+  .radio-wrapper label {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   .checkbox-wrapper label,
@@ -1485,6 +1640,13 @@ ol > li::before {
   width: 1.25rem;
   text-align: right;
 }
+@media (max-width: 991px) {
+  ol > li::before {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
 @media (max-width: 767px) {
   ol > li::before {
     font-size: 1.125rem;
@@ -1507,6 +1669,13 @@ ol > li > ol > li::before {
   font-size: 1rem;
   font-weight: 700;
   line-height: 120%;
+}
+@media (max-width: 991px) {
+  ol > li > ol > li::before {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
 }
 @media (max-width: 767px) {
   ol > li > ol > li::before {
@@ -1769,6 +1938,13 @@ ul.disc {
   line-height: 150%;
   border-radius: 6.25rem 6.25rem 6.25rem 6.25rem;
 }
+@media (max-width: 991px) {
+  .select-wrapper .select-dropdown {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   .select-wrapper .select-dropdown {
     font-size: 1rem;
@@ -1786,6 +1962,13 @@ ul.disc {
   font-weight: 400;
   line-height: 150%;
   padding: 0.5rem 1rem;
+}
+@media (max-width: 991px) {
+  .select-wrapper .select-dropdown.small {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   .select-wrapper .select-dropdown.small {
@@ -1944,6 +2127,13 @@ ul.disc {
   transition: color 0.3s ease-in-out;
   text-align: center;
 }
+@media (max-width: 991px) {
+  .tab-wrapper .tab .tab-item {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   .tab-wrapper .tab .tab-item {
     font-size: 1rem;
@@ -2013,6 +2203,13 @@ ul.disc {
   justify-content: center;
   gap: 0.5rem;
 }
+@media (max-width: 991px) {
+  .tag {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   .tag {
     font-size: 0.875rem;
@@ -2059,6 +2256,14 @@ a.link-s *,
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 120%;
+}
+@media (max-width: 991px) {
+  a.link-s *,
+  .link.link-s * {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
 }
 @media (max-width: 767px) {
   a.link-s *,
@@ -2127,6 +2332,13 @@ header .logo {
   color: #140030;
   background-color: #ffffff;
 }
+@media (max-width: 991px) {
+  .header-dropdown .dropdown-handle {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   .header-dropdown .dropdown-handle {
     font-size: 1rem;
@@ -2144,6 +2356,13 @@ header .logo {
   font-weight: 400;
   line-height: 150%;
   padding: 0.5rem 1rem;
+}
+@media (max-width: 991px) {
+  .header-dropdown .dropdown-handle.small {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   .header-dropdown .dropdown-handle.small {
@@ -2226,6 +2445,13 @@ footer {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 150%;
+}
+@media (max-width: 991px) {
+  footer {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   footer {
@@ -2311,6 +2537,13 @@ main {
   font-weight: 500;
   line-height: 150%;
 }
+@media (max-width: 991px) {
+  .login-page .login-container .login-methods .login-content .login-title p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   .login-page .login-container .login-methods .login-content .login-title p {
     font-size: 1rem;
@@ -2328,6 +2561,13 @@ main {
   padding: 1rem 1rem;
   margin-bottom: 1.25rem;
 }
+@media (max-width: 991px) {
+  .login-page .login-container .login-methods .login-content .login-action .login-desc {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   .login-page .login-container .login-methods .login-content .login-action .login-desc {
     font-size: 0.875rem;
@@ -2340,6 +2580,13 @@ main {
   font-weight: 700;
   line-height: 150%;
   color: #313131;
+}
+@media (max-width: 991px) {
+  .login-page .login-container .login-methods .login-content .login-action .login-desc b {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   .login-page .login-container .login-methods .login-content .login-action .login-desc b {
@@ -2358,6 +2605,13 @@ main {
   line-height: 150%;
   color: #626262;
 }
+@media (max-width: 991px) {
+  .login-page .login-container .login-methods .login-terms {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 @media (max-width: 767px) {
   .login-page .login-container .login-methods .login-terms {
     font-size: 0.875rem;
@@ -2369,6 +2623,13 @@ main {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 150%;
+}
+@media (max-width: 991px) {
+  .login-page .login-container .login-methods .login-terms a span {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   .login-page .login-container .login-methods .login-terms a span {
@@ -2426,6 +2687,13 @@ main {
     line-height: 120%;
   }
 }
+@media (max-width: 767px) and (max-width: 991px) {
+  .login-page .login-container .login-methods .login-content .login-title h3 {
+    font-size: 2.375rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
 @media (max-width: 767px) and (max-width: 767px) {
   .login-page .login-container .login-methods .login-content .login-title h3 {
     font-size: 2rem;
@@ -2462,6 +2730,13 @@ main {
   font-size: 1rem;
   font-weight: 400;
   line-height: 150%;
+}
+@media (max-width: 991px) {
+  .error-content .desc {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 @media (max-width: 767px) {
   .error-content .desc {

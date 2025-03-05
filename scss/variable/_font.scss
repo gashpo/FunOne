@@ -73,6 +73,63 @@ $font-family: (
       line-height: 120%,
     ),
   ),
+  tablet: (
+    h1: (
+      font-size: fontsize(38),
+      font-weight: fontweight(Bold),
+      line-height: 120%,
+    ),
+    h2: (
+      font-size: fontsize(32),
+      font-weight: fontweight(Bold),
+      line-height: 120%,
+    ),
+    h3: (
+      font-size: fontsize(24),
+      font-weight: fontweight(Bold),
+      line-height: 120%,
+    ),
+    h4: (
+      font-size: fontsize(20),
+      font-weight: fontweight(Bold),
+      line-height: 120%,
+    ),
+    h5: (
+      font-size: fontsize(18),
+      font-weight: fontweight(Bold),
+      line-height: 120%,
+    ),
+    h6: (
+      font-size: fontsize(16),
+      font-weight: fontweight(Bold),
+      line-height: 120%,
+    ),
+    body1: (
+      font-size: fontsize(20),
+      font-weight: fontweight(Regular),
+      line-height: 150%,
+    ),
+    body2: (
+      font-size: fontsize(18),
+      font-weight: fontweight(Regular),
+      line-height: 150%,
+    ),
+    body3: (
+      font-size: fontsize(16),
+      font-weight: fontweight(Regular),
+      line-height: 150%,
+    ),
+    body4: (
+      font-size: fontsize(14),
+      font-weight: fontweight(Regular),
+      line-height: 150%,
+    ),
+    caption: (
+      font-size: fontsize(12),
+      font-weight: fontweight(Regular),
+      line-height: 120%,
+    ),
+  ),
   mobile: (
     h1: (
       font-size: fontsize(32),
@@ -157,10 +214,16 @@ $font-family: (
   line-height: fontfamily($element, desktop, line-height);
 
   // 加入其他斷點的樣式
+  @include max-to(tablet) {
+    font-size: fontfamily($element, tablet);
+    font-weight: $weight;
+    line-height: fontfamily($element, tablet, line-height);
+  }
+
   @include max-to(mobile) {
     font-size: fontfamily($element, mobile);
     font-weight: $weight;
-    line-height: fontfamily($element, desktop, line-height);
+    line-height: fontfamily($element, mobile, line-height);
   }
 }
 
