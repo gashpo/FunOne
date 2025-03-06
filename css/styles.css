@@ -1619,6 +1619,11 @@ input[type=text] {
   transition: opacity 0.2s ease-in-out;
 }
 
+ul.disc {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
 ol {
   counter-reset: list-counter;
   list-style: none;
@@ -1628,16 +1633,14 @@ ol {
 ol > li {
   counter-increment: list-counter;
   position: relative;
-  padding-left: 2rem;
+  display: flex;
+  gap: 0.5rem;
 }
 ol > li::before {
   content: counters(list-counter, ".") ". ";
-  position: absolute;
-  left: 0;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 120%;
-  width: 1.25rem;
   text-align: right;
 }
 @media (max-width: 991px) {
@@ -1657,47 +1660,38 @@ ol > li::before {
 ol > li:not(:last-child) {
   margin-bottom: 1.25rem;
 }
-ol > li > ol {
+ol.ol-secondary {
   counter-reset: list-counter;
-  margin-left: -1.75rem;
   margin-top: 0.25rem;
 }
-ol > li > ol > li {
-  padding-left: 2.75rem;
-}
-ol > li > ol > li::before {
+ol.ol-secondary > li::before {
   font-size: 1rem;
   font-weight: 700;
   line-height: 120%;
 }
 @media (max-width: 991px) {
-  ol > li > ol > li::before {
+  ol.ol-secondary > li::before {
     font-size: 1rem;
     font-weight: 700;
     line-height: 120%;
   }
 }
 @media (max-width: 767px) {
-  ol > li > ol > li::before {
+  ol.ol-secondary > li::before {
     font-size: 1rem;
     font-weight: 700;
     line-height: 120%;
   }
 }
-ol > li > ol > li:not(:last-child) {
+ol.ol-secondary > li:not(:last-child) {
   margin-bottom: 0.25rem;
 }
-ol > li > ol > li > ol {
-  margin-left: -2.75rem;
-  margin-bottom: 0;
+ol.ol-tertiary {
+  counter-reset: list-counter;
+  margin-top: 0.25rem;
 }
-ol > li > ol > li > ol > li {
-  padding-left: 3.25rem;
-}
-
-ul.disc {
-  padding-left: 1.5rem;
-  list-style-type: disc;
+ol.ol-tertiary > li:not(:last-child) {
+  margin-bottom: 0.25rem;
 }
 
 .marquee {
@@ -2231,7 +2225,7 @@ a,
 }
 a *,
 .link * {
-  color: #140030;
+  color: #191919;
   transition: color 0.3s ease-in-out;
 }
 a i,
@@ -2243,6 +2237,9 @@ a i,
 a span,
 .link span {
   text-decoration: underline;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 @media (hover: hover) {
   a:hover *,
@@ -2486,6 +2483,25 @@ main {
 .page-title h2 {
   margin-bottom: 1.25rem;
 }
+.page-title p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media (max-width: 991px) {
+  .page-title p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+@media (max-width: 767px) {
+  .page-title p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 
 .login-page {
   min-height: 100dvh;
@@ -2681,27 +2697,6 @@ main {
     justify-content: space-between;
     min-height: 21.875rem;
   }
-  .login-page .login-container .login-methods .login-content .login-title h3 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 120%;
-  }
-}
-@media (max-width: 767px) and (max-width: 991px) {
-  .login-page .login-container .login-methods .login-content .login-title h3 {
-    font-size: 2.375rem;
-    font-weight: 700;
-    line-height: 120%;
-  }
-}
-@media (max-width: 767px) and (max-width: 767px) {
-  .login-page .login-container .login-methods .login-content .login-title h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 120%;
-  }
-}
-@media (max-width: 767px) {
   .login-page > .marquee {
     display: flex;
   }
@@ -2711,6 +2706,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+.privacy-content p + h5 {
+  margin-top: 1.25rem;
 }
 
 .error-content {

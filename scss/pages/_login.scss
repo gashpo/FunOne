@@ -137,12 +137,6 @@
           gap: spacing(40);
           justify-content: space-between;
           min-height: px(350);
-
-          .login-title {
-            h3 {
-              @include fontRWD(h1);
-            }
-          }
         }
       }
     }

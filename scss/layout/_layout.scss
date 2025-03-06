@@ -23,4 +23,8 @@ main {
   h2 {
     margin-bottom: spacing(20);
   }
+
+  p {
+    @include fontRWD(body2);
+  }
 }

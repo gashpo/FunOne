@@ -3,7 +3,7 @@ a,
   text-decoration: none;
 
   * {
-    color: color(primary-900);
+    color: color(gray-900);
     @include transition(color);
   }
 
@@ -15,6 +15,9 @@ a,
 
   span {
     text-decoration: underline;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
   }
 
   @include hover {

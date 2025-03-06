@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: spacing(20);
+
+  p + h5 {
+    margin-top: spacing(20);
+  }
 }
 
 .error-content {
