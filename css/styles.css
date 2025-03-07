@@ -2621,11 +2621,25 @@ main {
   bottom: 0;
   left: 0;
   z-index: 3;
+  border-radius: 6.25rem 6.25rem 6.25rem 6.25rem;
+  overflow: hidden;
   opacity: 0;
 }
+.login-page .login-container .login-methods .login-content .login-action .google-login .g_id_signin > div {
+  height: 100% !important;
+}
+.login-page .login-container .login-methods .login-content .login-action .google-login .g_id_signin > div > div {
+  height: 100% !important;
+}
 .login-page .login-container .login-methods .login-content .login-action .google-login .g_id_signin > div > div > div {
+  height: 100% !important;
   width: 100% !important;
   max-width: none !important;
+}
+@media (hover: hover) {
+  .login-page .login-container .login-methods .login-content .login-action .google-login .g_id_signin:hover ~ .btn {
+    background-color: #28005f;
+  }
 }
 .login-page .login-container .login-methods .login-content .login-action .google-login .btn {
   width: 100%;
