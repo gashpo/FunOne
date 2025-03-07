@@ -16,6 +16,9 @@
     <!-- 分享網頁時會顯示的縮圖 -->
     <meta name="mobile-web-app-capable" content="yes" />
     
+    <!-- Google Login -->
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    
     <!-- 是否使用全屏顯示 -->
     <!-- iOS Safari Set Up -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -70,9 +73,18 @@
                         <div class="login-desc">
                             若您已是 FunOne Tickets 會員，請完成 Google 登入後，使用您當初<b>註冊 FunOne Tickets 的手機號碼進行綁定</b>，以同步您的會員資料並保留原有權益。
                         </div>
-                        <div class="btn btn-l">
-                            <img src="images/google.svg">
-                            <span>使用 Google 登入</span>
+                        <div class="google-login">
+                            <div id="g_id_onload" data-client_id="900102547486-358df2nc9ijst77msbcljnea0cdd1cn0.apps.googleusercontent.com" data-callback="handleCallback" data-auto_prompt="false"></div>
+                            <div class="g_id_signin" data-type="standard" data-size="large" data-theme="filled_black" data-text="sign_in_with" data-shape="pill" data-logo_alignment="left" data-width="400">
+                                <div class="S9gUrf-YoZ4jf" style="position: relative;">
+                                    <div></div>
+                                    <iframe src="https://accounts.google.com/gsi/button?type=standard&amp;size=large&amp;theme=filled_black&amp;text=sign_in_with&amp;shape=pill&amp;logo_alignment=left&amp;width=400&amp;is_fedcm_supported=true&amp;client_id=900102547486-358df2nc9ijst77msbcljnea0cdd1cn0.apps.googleusercontent.com&amp;iframe_id=gsi_649582_56499&amp;cas=UpaAAXazfwpwzB5H2wvuvukAn72239JUHDItSL2rOxI" allow="identity-credentials-get" id="gsi_649582_56499" title="「使用 Google 帳戶登入」按鈕" style="display: block; position: relative; top: 0px; left: 0px; height: 44px; width: 420px; border: 0px; margin: -2px -10px;"></iframe>
+                                </div>
+                            </div>
+                            <div class="btn btn-l">
+                                <img src="images/google.svg">
+                                <span>使用 Google 登入</span>
+                            </div>
                         </div>
                     </div>
                 </div>

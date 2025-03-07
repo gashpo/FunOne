@@ -2611,7 +2611,23 @@ main {
     line-height: 150%;
   }
 }
-.login-page .login-container .login-methods .login-content .login-action button {
+.login-page .login-container .login-methods .login-content .login-action .google-login {
+  position: relative;
+}
+.login-page .login-container .login-methods .login-content .login-action .google-login .g_id_signin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+}
+.login-page .login-container .login-methods .login-content .login-action .google-login .g_id_signin > div > div > div {
+  width: 100% !important;
+  max-width: none !important;
+}
+.login-page .login-container .login-methods .login-content .login-action .google-login .btn {
   width: 100%;
 }
 .login-page .login-container .login-methods .login-terms {
