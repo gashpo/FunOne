@@ -2539,7 +2539,7 @@ main {
 .login-page .login-container .login-methods .login-content {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  justify-content: space-between;
   gap: 2.5rem;
   min-height: 23.125rem;
 }
@@ -2686,11 +2686,27 @@ main {
 }
 @media (max-width: 1279px) {
   .login-page .login-container {
-    width: calc(100dvw - 2rem);
-    min-width: 45rem;
+    max-width: calc(100dvw - 2rem);
   }
   .login-page .login-container .login-methods {
-    width: calc((100dvw - 2rem) * 0.6);
+    max-width: calc((100dvw - 2rem) * 0.6);
+  }
+}
+@media (max-width: 991px) {
+  .login-page .login-container {
+    height: auto;
+  }
+  .login-page .login-container .imagery .logo {
+    padding: 1.25rem;
+  }
+  .login-page .login-container .login-methods {
+    width: 28.5rem;
+    margin: auto;
+    padding: 1.75rem 2.5rem;
+    gap: 2.5rem;
+  }
+  .login-page .login-container .login-methods .login-content {
+    min-height: 21.25rem;
   }
 }
 @media (max-width: 767px) {
@@ -2708,13 +2724,15 @@ main {
   }
   .login-page .login-container .imagery .logo {
     height: 2.75rem;
+    padding: 0rem;
   }
   .login-page .login-container .imagery .marquee {
     display: none;
   }
   .login-page .login-container .login-methods {
     background-color: #ffffff;
-    width: 100%;
+    width: 28.5rem;
+    max-width: 100%;
     border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
     padding: 2.5rem 1.75rem 1.75rem;
     gap: 2.5rem;

@@ -39,7 +39,7 @@
       .login-content {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        justify-content: space-between;
         gap: spacing(40);
         min-height: px(370);
 
@@ -128,11 +128,33 @@
 
   @include max-to(desktop) {
     .login-container {
-      width: calc(100dvw - px(32));
-      min-width: px(720);
+      max-width: calc(100dvw - px(32));
 
       .login-methods {
-        width: calc((100dvw - px(32)) * 0.6);
+        max-width: calc((100dvw - px(32)) * 0.6);
+      }
+    }
+  }
+
+  @include max-to(tablet) {
+    .login-container {
+      height: auto;
+
+      .imagery {
+        .logo {
+          padding: spacing(20);
+        }
+      }
+
+      .login-methods {
+        width: px(456);
+        margin: auto;
+        padding: spacing(28) spacing(40);
+        gap: spacing(40);
+
+        .login-content {
+          min-height: px(340);
+        }
       }
     }
   }
@@ -152,6 +174,7 @@
       .imagery {
         .logo {
           height: px(44);
+          padding: spacing(0);
         }
         .marquee {
           display: none;
@@ -160,7 +183,8 @@
 
       .login-methods {
         background-color: color(gray-0);
-        width: 100%;
+        width: px(456);
+        max-width: 100%;
         @include rounded(40);
         padding: spacing(40) spacing(28) spacing(28);
         gap: spacing(40);
