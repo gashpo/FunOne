@@ -10,11 +10,13 @@
   justify-content: center;
 
   .login-container {
-    width: px(1000);
+    width: px(900);
+    height: px(600);
     background-color: color(gray-0);
     @include rounded(40);
     padding: spacing(4);
     display: flex;
+    align-items: stretch;
 
     .imagery {
       @include rounded(40);
@@ -28,19 +30,18 @@
     }
 
     .login-methods {
-      width: px(540);
-      padding: spacing(72) spacing(36) spacing(28);
+      width: px(480);
+      padding: spacing(72) spacing(40) spacing(28);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: spacing(120);
 
       .login-content {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: spacing(64);
-        min-height: px(360);
+        gap: spacing(40);
+        min-height: px(370);
 
         .login-title {
           img {
@@ -87,14 +88,9 @@
               > div {
                 height: 100% !important;
 
-                > div {
+                iframe {
                   height: 100% !important;
-
-                  > div {
-                    height: 100% !important;
-                    width: 100% !important;
-                    max-width: none !important;
-                  }
+                  margin: 0 !important;
                 }
               }
 
